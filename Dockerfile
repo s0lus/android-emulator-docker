@@ -36,7 +36,7 @@ RUN yes | sdkmanager --licenses && \
     yes | sdkmanager \
                      "platforms;android-22" \
                      "system-images;android-22;google_apis;x86" \
-		     "platforms;android-23" \
+                     "platforms;android-23" \
                      "system-images;android-23;google_apis;x86" \
                      "platforms;android-24" \
                      "system-images;android-24;google_apis;x86" \
@@ -44,10 +44,10 @@ RUN yes | sdkmanager --licenses && \
                      "system-images;android-25;google_apis;x86" \
                      "platforms;android-26" \
                      "system-images;android-26;google_apis;x86" \
-		     "platforms;android-27" \
+                     "platforms;android-27" \
                      "system-images;android-27;google_apis;x86" \
-		     "platforms;android-28" \
-                     "system-images;android-28;google_apis;x86" \
+                      "platforms;android-28" \
+                     "system-images;android-28;google_apis;x86"
 
 # Create emulators
 RUN \
