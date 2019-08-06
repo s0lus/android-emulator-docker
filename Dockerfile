@@ -50,10 +50,4 @@ RUN yes | sdkmanager --licenses && \
                      "system-images;android-28;google_apis;x86"
 
 # Create emulators
-RUN \
-    echo "no" | avdmanager create avd -n e2e-android-22 -k "system-images;android-22;google_apis;x86"
-
-# If not setup resolution, then we will get message about corrupted config
-RUN \
-    echo hw.lcd.height=1920 >> /root/.android/avd/e2e-android-22.avd/config.ini && \
-    echo hw.lcd.width=1080 >> /root/.android/avd/e2e-android-22.avd/config.ini
+RUN avdmanager create avd -n Nexus_5_x86 -k "system-images;android-22;google_apis;x86" --device "Nexus 5"
